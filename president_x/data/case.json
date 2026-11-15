@@ -1,0 +1,392 @@
+{
+  "FRAGMENTS": [
+    "Killed by one of his clones",
+    "President's top-secret consciousness stolen",
+    "Is the country at risk?"
+  ],
+  "BRIEF": [
+    "You are the President's trusted secretary, and you're assigned to figure out which clone is the murderer. Use your file with information that only you and the president know about to catch the killer.",
+    "The CIA have also given you a file that lists physical symptoms a thief will feel when they insert the president's consciousness into them."
+  ],
+  "TUTOR": [
+    [
+      "WHO YOU ARE",
+      "You are the President's secretary.\nThree units sit at the table. One of them is wearing his stolen mind. The other two are not.\nYour job is to name the thief before five minutes run out."
+    ],
+    [
+      "STEP 1  /  THE DESK",
+      "You get 30 seconds before the door shuts.\nRead the Personal Failsafe File. It holds memories only you and the President share.\nRead the CIA Physical Symptoms File. It lists what a thief's body does.\nLock up to three question categories. Pick the ones those files point at.\nThe files stay open during the interview. The categories lock when you begin.\nEsc pauses the clock. Reading a file does not."
+    ],
+    [
+      "STEP 2  /  THE TABLE",
+      "You get five minutes with the three units.\nLeft and Right, or the keys 1, 2, and 3, choose a unit.\nUp and Down move through the questions you locked. Enter asks the highlighted one.\nEach question can be asked of only one unit. Spend it where you want the test.\nO observes the body. Observation is free, and you can do it more than once."
+    ],
+    [
+      "STEP 3  /  A LOCKED UNIT",
+      "Any unit can refuse to answer. Innocence does not protect them, and guilt does not mark them.\nChoose OVERRIDE SAFETY LOCK. Set the three latches to the positions written in the Personal Failsafe File, then press ENGAGE.\nThe restraint only subdues him so he will talk. It will not tell you who the thief is."
+    ],
+    [
+      "STEP 4  /  THE ACCUSATION",
+      "Press A when you are ready to name a unit.\nA correct name recovers the mind. A wrong name ends the case, and the answer is not given to you.\nIf the clock hits zero before you accuse, the stolen mind destroys itself and the host.\nM mutes the sound. The mouse wheel scrolls a file."
+    ]
+  ],
+  "WARN_TEXT": "TIME EXPIRED. CONSCIOUSNESS DE-SYNC DETECTED.",
+  "FAIL_TEXT": "INVESTIGATION FAILED. The stolen data has self-destructed, taking the host with it.",
+  "LOCK_FIRST": "The safety lock snaps shut. He will not answer another question until you override the restraint. Firing it subdues him. It will not tell you if he is the thief.",
+  "LOCK_AGAIN": "The safety lock snaps shut. Override the restraint if you want him talking again.",
+  "ALIBI": "At 02:14 I was in stasis bay two. The night nurse has the log. I woke when the alarms did.",
+  "ACCESS": "At that hour the wing opens for the secretary and the medical annex. You already have the list.",
+  "OATH": "\"I wake to serve the continuity of the Republic, and I am not the man who died.\"",
+  "CATEGORIES": [
+    [
+      "failsafe",
+      "FAILSAFE MEMORY",
+      "Private facts only the two of you share."
+    ],
+    [
+      "ocular",
+      "OCULAR SIGNS",
+      "Iris and sclera under the hard light."
+    ],
+    [
+      "motor",
+      "MOTOR TELLS",
+      "Jaw rhythm, and friction on the word I."
+    ],
+    [
+      "alibi",
+      "ALIBI AND ACCESS",
+      "The murder hour, and who could enter."
+    ],
+    [
+      "motive",
+      "MOTIVE",
+      "Who wanted the office empty."
+    ],
+    [
+      "oath",
+      "ACTIVATION OATH",
+      "The sentence they swore on waking."
+    ]
+  ],
+  "QUESTIONS": [
+    {
+      "id": "ashtray",
+      "cat": "failsafe",
+      "label": "What happened to the crystal ashtray in the west study?"
+    },
+    {
+      "id": "nickname",
+      "cat": "failsafe",
+      "label": "What did your wife call you when you were alone?"
+    },
+    {
+      "id": "phrase",
+      "cat": "failsafe",
+      "label": "What phrase did you give me if you were ever compromised?"
+    },
+    {
+      "id": "light",
+      "cat": "ocular",
+      "label": "Look into the lamp. Don't blink."
+    },
+    {
+      "id": "lid",
+      "cat": "ocular",
+      "label": "Lower your lid. Show me the inner corner."
+    },
+    {
+      "id": "count",
+      "cat": "motor",
+      "label": "Count backward from thirty."
+    },
+    {
+      "id": "pronoun",
+      "cat": "motor",
+      "label": "Say \"I am the President\" three times."
+    },
+    {
+      "id": "alibi",
+      "cat": "alibi",
+      "label": "Where were you at 02:14, when the wing went dark?"
+    },
+    {
+      "id": "access",
+      "cat": "alibi",
+      "label": "Who had access to the residence wing?"
+    },
+    {
+      "id": "gains",
+      "cat": "motive",
+      "label": "Who gains if the President is gone?"
+    },
+    {
+      "id": "hate",
+      "cat": "motive",
+      "label": "Did you hate him?"
+    },
+    {
+      "id": "oath",
+      "cat": "oath",
+      "label": "Recite the oath you swore on the day you woke."
+    }
+  ],
+  "ANSWERS": {
+    "ashtray": {
+      "ash": "The crystal ashtray in the west study is a gift from the French ambassador. I have never touched it. I don't smoke.",
+      "bone": "I broke it. Tuesday, after Geneva. You told the night staff it was their fault.",
+      "cinder": "March. The budget fight. I threw it at the window and missed. You were in the room."
+    },
+    "nickname": {
+      "ash": "She was formal, even when we were alone. She called me by the office, or she called me nothing.",
+      "bone": "Marrow. Only she used it. If you are testing me with that word, you already know what you are looking at.",
+      "cinder": "She called me Chief. A campaign joke that followed us home. Don't dress it up as more than that."
+    },
+    "phrase": {
+      "ash": "If I were compromised, the Chiefs receive Continuity Protocol Seven. That is the standing order.",
+      "bone": "The third lamp on the east colonnade is always dark.",
+      "cinder": "The eagle does not land. You wrote it. It still works. Tell them that."
+    },
+    "light": {
+      "ash": "He stares into the lamp. Both irises hold the same steady cyan ring. Neither one strobes.",
+      "bone": "The eye on your left strobes cyan-white in the lamp. The other stays dull, like a dead coin.",
+      "cinder": "He squints and waters. Both irises stay even. No strobe. The pink is spread across the whole eye."
+    },
+    "lid": {
+      "ash": "You draw the lid down. The white is clean. The inner corner is the same color as the rest.",
+      "bone": "The inner corners are deep crimson, pooled, heavier on your left. It is pressure, not irritation.",
+      "cinder": "Pink, yes, but from edge to edge. The inner corner is no darker than the rest of the eye."
+    },
+    "count": {
+      "ash": "He counts from thirty to one without a stumble. The jaw stays still the whole way down.",
+      "bone": "The numbers come out straight. The jaw on your left ticks on its own clock, three times before twenty.",
+      "cinder": "He rushes and loses twenty-two. The jaw on your right clenches once, then nothing. No rhythm."
+    },
+    "pronoun": {
+      "ash": "\"I am the President of the Republic.\" Three times, smooth as a teleprompter. The pronoun never catches.",
+      "bone": "\"I- I am the President.\" The word I catches on every pass. The rest of the sentence does not.",
+      "cinder": "He says it too loud and too fast. There is fear in it. The pronoun itself does not glitch."
+    },
+    "alibi": {
+      "ash": "At 02:14 I was in stasis bay two. The night nurse has the log. I woke when the alarms did.",
+      "bone": "At 02:14 I was in stasis bay two. The night nurse has the log. I woke when the alarms did.",
+      "cinder": "At 02:14 I was in stasis bay two. The night nurse has the log. I woke when the alarms did."
+    },
+    "access": {
+      "ash": "At that hour the wing opens for the secretary and the medical annex. You already have the list.",
+      "bone": "At that hour the wing opens for the secretary and the medical annex. You already have the list.",
+      "cinder": "At that hour the wing opens for the secretary and the medical annex. You already have the list."
+    },
+    "gains": {
+      "ash": "The defense chair gains. He has wanted the emergency seat for a year. The whole building knows it.",
+      "bone": "If the mind is loose, nobody in the line of succession gains. A stolen consciousness is a weapon with no owner.",
+      "cinder": "Look at the vice president and the succession. Look anywhere but at this table."
+    },
+    "hate": {
+      "ash": "Hate is a small word for a copy. I was made to continue him, not to kill him.",
+      "bone": "You want a feeling you can file. I felt his exhaustion. That is not a motive. It is a residue.",
+      "cinder": "I didn't hate him. I hated the vat. I need you to hear the difference."
+    },
+    "oath": {
+      "ash": "\"I wake to serve the continuity of the Republic, and I am not the man who died.\"",
+      "bone": "\"I wake to serve the continuity of the Republic, and I am not the man who died.\"",
+      "cinder": "\"I wake to serve the continuity of the Republic, and I am not the man who died.\""
+    }
+  },
+  "OBSERVE": {
+    "ash": "You study him in the hard light. Both irises carry the same calm cyan ring, and neither strobes. The whites are clear. The inner corners are clean. His jaw does not move unless he is speaking. His upper lip is dry. He looks like a man giving a briefing.",
+    "bone": "You study him. The eye on your left strobes cyan-white when the light hits. The other stays dim. Both inner corners are a deep, pooled crimson, heavier on your left. The jaw on your left ticks, stops, and ticks again on a rhythm that is not speech. One bead of sweat sits on the upper lip. He is too still.",
+    "cinder": "You study him. He cannot hold your eye. Both whites are pink from edge to edge, washed, not a dark pool at the inner corner. The irises match. There is no strobe. He blinks in bursts. Once, the jaw on your right clenches and lets go. It does not repeat. He is sweating through the collar."
+  },
+  "SHOCK_LINE": {
+    "ash": "RESTRAINT FIRED. Subdued is not the same as guilty, and it is not the same as innocent.\n\n\"That was unnecessary. Ask.\"",
+    "bone": "RESTRAINT FIRED. Subdued is not the same as guilty, and it is not the same as innocent.\n\n\"Ask. Get it over with.\"",
+    "cinder": "RESTRAINT FIRED. Subdued is not the same as guilty, and it is not the same as innocent.\n\n\"All right. I'm here. I'm here.\""
+  },
+  "FAILSAFE_FILE": [
+    [
+      "kicker",
+      "PERSONAL FAILSAFE FILE"
+    ],
+    [
+      "sub",
+      "SECRETARY EYES ONLY  /  NOT IN THE MARCH CLONE IMPRINT"
+    ],
+    [
+      "body",
+      "The duplicates were printed from a March archive. Anything after that lives in two places only: in him, and in you."
+    ],
+    [
+      "mark",
+      "WEST STUDY. Last Tuesday, after the Geneva call, he broke the crystal ashtray himself and told you to blame the night staff. The stolen mind will remember doing it. A bare clone will invent another story."
+    ],
+    [
+      "mark",
+      "PRIVATE NAME. When they were alone, his wife called him Marrow. It is in no archive, no speech, and no imprint."
+    ],
+    [
+      "mark",
+      "COMPROMISE PHRASE. If he were not himself, the signal to the Chiefs would be: \"The third lamp on the east colonnade is always dark.\""
+    ],
+    [
+      "mark",
+      "CATEGORY. These clues are FAILSAFE MEMORY. Each question can be asked to only one unit. Spend them like ammunition."
+    ],
+    [
+      "dim",
+      "RESTRAINT LATCH, if a unit turns on you: CYAN shut (1), RED open (0), WHITE open (0). The terminal writes it as logic. The positions are the same."
+    ]
+  ],
+  "CIA_FILE": [
+    [
+      "kicker",
+      "CIA PHYSICAL SYMPTOMS FILE"
+    ],
+    [
+      "sub",
+      "NEURAL THEFT FIELD GUIDE  /  READ THE CLUSTER, NOT ONE SIGN"
+    ],
+    [
+      "body",
+      "Forcing a living consciousness into a host body leaves a pattern. One sign is nothing. Sweat is nothing. All three of them will sweat. Left means your left, as you face the unit."
+    ],
+    [
+      "mark",
+      "IRIS. The eye on YOUR LEFT strobes cyan-white under the hard light. The other stays dim. Matching rings in both eyes are ordinary clone hardware."
+    ],
+    [
+      "mark",
+      "SCLERA. Deep crimson pools at the INNER corners, heavier on your left. Pink washed across the whole eye is vat-allergy, a known false positive."
+    ],
+    [
+      "mark",
+      "JAW. A rhythmic twitch on YOUR LEFT side of the jaw. A single clench, on either side, is only fear."
+    ],
+    [
+      "mark",
+      "SPEECH. The thief catches on the words \"I\" and \"me\". Rambling is nerves. A glitch on the pronoun is theft."
+    ],
+    [
+      "mark",
+      "CATEGORIES. Use OCULAR SIGNS for the eyes. Use MOTOR TELLS for the jaw and the pronoun."
+    ],
+    [
+      "dim",
+      "Do not convict nervousness. Fear is dressed like guilt. The pattern is not."
+    ]
+  ],
+  "FILES": [
+    [
+      "Personal Failsafe File",
+      [
+        [
+          "kicker",
+          "PERSONAL FAILSAFE FILE"
+        ],
+        [
+          "sub",
+          "SECRETARY EYES ONLY  /  NOT IN THE MARCH CLONE IMPRINT"
+        ],
+        [
+          "body",
+          "The duplicates were printed from a March archive. Anything after that lives in two places only: in him, and in you."
+        ],
+        [
+          "mark",
+          "WEST STUDY. Last Tuesday, after the Geneva call, he broke the crystal ashtray himself and told you to blame the night staff. The stolen mind will remember doing it. A bare clone will invent another story."
+        ],
+        [
+          "mark",
+          "PRIVATE NAME. When they were alone, his wife called him Marrow. It is in no archive, no speech, and no imprint."
+        ],
+        [
+          "mark",
+          "COMPROMISE PHRASE. If he were not himself, the signal to the Chiefs would be: \"The third lamp on the east colonnade is always dark.\""
+        ],
+        [
+          "mark",
+          "CATEGORY. These clues are FAILSAFE MEMORY. Each question can be asked to only one unit. Spend them like ammunition."
+        ],
+        [
+          "dim",
+          "RESTRAINT LATCH, if a unit turns on you: CYAN shut (1), RED open (0), WHITE open (0). The terminal writes it as logic. The positions are the same."
+        ]
+      ]
+    ],
+    [
+      "CIA Physical Symptoms File",
+      [
+        [
+          "kicker",
+          "CIA PHYSICAL SYMPTOMS FILE"
+        ],
+        [
+          "sub",
+          "NEURAL THEFT FIELD GUIDE  /  READ THE CLUSTER, NOT ONE SIGN"
+        ],
+        [
+          "body",
+          "Forcing a living consciousness into a host body leaves a pattern. One sign is nothing. Sweat is nothing. All three of them will sweat. Left means your left, as you face the unit."
+        ],
+        [
+          "mark",
+          "IRIS. The eye on YOUR LEFT strobes cyan-white under the hard light. The other stays dim. Matching rings in both eyes are ordinary clone hardware."
+        ],
+        [
+          "mark",
+          "SCLERA. Deep crimson pools at the INNER corners, heavier on your left. Pink washed across the whole eye is vat-allergy, a known false positive."
+        ],
+        [
+          "mark",
+          "JAW. A rhythmic twitch on YOUR LEFT side of the jaw. A single clench, on either side, is only fear."
+        ],
+        [
+          "mark",
+          "SPEECH. The thief catches on the words \"I\" and \"me\". Rambling is nerves. A glitch on the pronoun is theft."
+        ],
+        [
+          "mark",
+          "CATEGORIES. Use OCULAR SIGNS for the eyes. Use MOTOR TELLS for the jaw and the pronoun."
+        ],
+        [
+          "dim",
+          "Do not convict nervousness. Fear is dressed like guilt. The pattern is not."
+        ]
+      ]
+    ]
+  ],
+  "GOOD_CARDS": [
+    [
+      "HE BREAKS",
+      "The voice that comes out of the unit is older than the body. You have heard it across a desk for years.\n\n\"It was me. I pulled him out of his own skull and put him on. He fought. The original man is dead three floors up, and I am what is left of him.\""
+    ],
+    [
+      "RECOVERED",
+      "Security takes him by the arms. He does not fight them.\n\nThe archive team recovers the consciousness before the lattice collapses. The stolen mind goes back into a case that should never have been opened."
+    ],
+    [
+      "THE EMPTY SEAL",
+      "The office cannot sit empty. The building knows it before you do.\n\nThey put the oath in front of the only person in the room who was never grown in a vat."
+    ],
+    [
+      "CONTINUITY",
+      "You set the secretary's file down.\n\nYou are the President of the Republic."
+    ]
+  ],
+  "BAD_CARDS": [
+    [
+      "TAKEN",
+      "The team moves on the unit you named. For a moment the room believes you."
+    ],
+    [
+      "PROTOCOL BREACH",
+      "Then the ceiling speaks, calm as a clerk.\n\n\"Accusation mismatch. Secretary is compromised. Protocol breach.\"\n\nThe doors bolt. The other two do not stand. One of them is still wearing the country."
+    ],
+    [
+      "SEDATIVE",
+      "The vents open. Sweet, cold gas drops across the table, across your hands, into the light.\n\nYour knees go. The lamp stretches into a white line.\n\nYou fade out of consciousness."
+    ]
+  ],
+  "COL_LEFT": "The residence wing was sealed at 02:16. A medical annex clerk said the cranial archive was open and empty. No statement has been cleared for the public.",
+  "COL_RIGHT": "Three duplicates were moved before dawn to Sublevel Interview C. They are seated at distances that forbid a whisper. The secretary holds the only list of questions that still matter."
+}
