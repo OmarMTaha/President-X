@@ -359,9 +359,8 @@ class Game:
             self.zoom_i += 1
             self.zoom_t = 0
             if self.zoom_i >= 3:
-                self.state = "brief"
-                self.brief_i = 0
-                self.chars = 0
+                self.state = "drop"
+                self.drop_t = 0
         elif self.state == "brief":
             full = BRIEF[self.brief_i]
             if self.chars < len(full):
@@ -618,9 +617,8 @@ class Game:
                 self.zoom_i += 1
                 self.zoom_t = 0
                 if self.zoom_i >= 3:
-                    self.state = "brief"
-                    self.brief_i = 0
-                    self.chars = 0
+                    self.state = "drop"
+                    self.drop_t = 0
         elif self.state == "brief":
             self.chars = min(len(BRIEF[self.brief_i]), self.chars + 75 * dt)
         elif self.state == "drop":

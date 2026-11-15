@@ -62,13 +62,15 @@ def jaw_amount(game, clone):
 def paint_raw(game, surf, clone, lit, talking, preview=False):
     t = game.anim_t
     s = 0.5
-    who = "ash" if preview else clone.id
+    # Every copy was printed from the same archive, so the face does not
+    # give the thief away. The signs show up only in an answer you asked for.
+    who = "ash"
 
     def p(v):
         return int(v * s + 0.5)
 
-    skin = (224, 196, 174) if preview or clone.id != "cinder" else (214, 176, 156)
-    skin_shadow = (176, 140, 118) if preview or clone.id != "cinder" else (168, 124, 108)
+    skin = (224, 196, 174)
+    skin_shadow = (176, 140, 118)
     jacket = (18, 24, 36)
     jacket_hi = (42, 52, 68)
     hair = (28, 26, 30)

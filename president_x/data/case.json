@@ -10,30 +10,30 @@
   ],
   "TUTOR": [
     [
-      "WHO YOU ARE",
-      "You are the President's secretary.\nThree units sit at the table. One of them is wearing his stolen mind. The other two are not.\nYour job is to name the thief before five minutes run out."
+      "YOUR JOB",
+      "You are the President's secretary.\nThree units are at the table. One of them is wearing his stolen mind.\nName that unit before five minutes run out."
     ],
     [
-      "STEP 1  /  THE DESK",
-      "You get 30 seconds before the door shuts.\nRead the Personal Failsafe File. It holds memories only you and the President share.\nRead the CIA Physical Symptoms File. It lists what a thief's body does.\nLock up to three question categories. Pick the ones those files point at.\nThe files stay open during the interview. The categories lock when you begin.\nEsc pauses the clock. Reading a file does not."
+      "THE DESK  /  45 SECONDS",
+      "Read both files. They stay open during the interview.\nThe Personal Failsafe File holds memories only you and the President share.\nThe CIA file describes the body of someone wearing a stolen mind. One sign is not enough.\nChoose up to three question categories. After you begin, you cannot change them.\nEsc pauses the clock. Opening a file does not."
     ],
     [
-      "STEP 2  /  THE TABLE",
-      "You get five minutes with the three units.\nLeft and Right, or the keys 1, 2, and 3, choose a unit.\nUp and Down move through the questions you locked. Enter asks the highlighted one.\nEach question can be asked of only one unit. Spend it where you want the test.\nO observes the body. Observation is free, and you can do it more than once."
+      "THE TABLE",
+      "Left and Right, or 1, 2, and 3, choose a unit.\nUp and Down move through your questions. Enter asks the highlighted one.\nEach question can be asked of only one unit, so choose carefully.\nO is a first look. It shows how he sits. It does not show the signs in the CIA file."
     ],
     [
-      "STEP 3  /  A LOCKED UNIT",
-      "Any unit can refuse to answer. Innocence does not protect them, and guilt does not mark them.\nChoose OVERRIDE SAFETY LOCK. Set the three latches to the positions written in the Personal Failsafe File, then press ENGAGE.\nThe restraint only subdues him so he will talk. It will not tell you who the thief is."
+      "IF HE LOCKS UP",
+      "Any unit can refuse to answer. That does not mean he is guilty.\nOpen the safety lock and set it to the positions in the Personal Failsafe File, then engage.\nThe restraint only quiets him so he will talk. It will not tell you who the thief is."
     ],
     [
-      "STEP 4  /  THE ACCUSATION",
-      "Press A when you are ready to name a unit.\nA correct name recovers the mind. A wrong name ends the case, and the answer is not given to you.\nIf the clock hits zero before you accuse, the stolen mind destroys itself and the host.\nM mutes the sound. The mouse wheel scrolls a file."
+      "THE ACCUSATION",
+      "Press A when you are ready to name a unit.\nThe right name recovers the mind. The wrong name ends the case, and you are not told the answer.\nIf the clock reaches zero first, the stolen mind destroys itself and the host.\nM mutes the sound. The mouse wheel scrolls a file."
     ]
   ],
   "WARN_TEXT": "TIME EXPIRED. CONSCIOUSNESS DE-SYNC DETECTED.",
   "FAIL_TEXT": "INVESTIGATION FAILED. The stolen data has self-destructed, taking the host with it.",
-  "LOCK_FIRST": "The safety lock snaps shut. He will not answer another question until you override the restraint. Firing it subdues him. It will not tell you if he is the thief.",
-  "LOCK_AGAIN": "The safety lock snaps shut. Override the restraint if you want him talking again.",
+  "LOCK_FIRST": "The safety lock closes. He will not answer until you override it. The restraint only quiets him. It will not tell you if he is the thief.",
+  "LOCK_AGAIN": "The safety lock closes again. Override it if you want him to answer.",
   "ALIBI": "At 02:14 I was in stasis bay two. The night nurse has the log. I woke when the alarms did.",
   "ACCESS": "At that hour the wing opens for the secretary and the medical annex. You already have the list.",
   "OATH": "\"I wake to serve the continuity of the Republic, and I am not the man who died.\"",
@@ -41,22 +41,22 @@
     [
       "failsafe",
       "FAILSAFE MEMORY",
-      "Private facts only the two of you share."
+      "Memories only you and the President share."
     ],
     [
       "ocular",
       "OCULAR SIGNS",
-      "Iris and sclera under the hard light."
+      "What the eyes do under a direct light."
     ],
     [
       "motor",
       "MOTOR TELLS",
-      "Jaw rhythm, and friction on the word I."
+      "The jaw, and a catch on the word I."
     ],
     [
       "alibi",
       "ALIBI AND ACCESS",
-      "The murder hour, and who could enter."
+      "Where he was, and who could get in."
     ],
     [
       "motive",
@@ -139,7 +139,7 @@
     },
     "nickname": {
       "ash": "She was formal, even when we were alone. She called me by the office, or she called me nothing.",
-      "bone": "Marrow. Only she used it. If you are testing me with that word, you already know what you are looking at.",
+      "bone": "Marrow. Only she used that name, and only when we were alone.",
       "cinder": "She called me Chief. A campaign joke that followed us home. Don't dress it up as more than that."
     },
     "phrase": {
@@ -148,24 +148,24 @@
       "cinder": "The eagle does not land. You wrote it. It still works. Tell them that."
     },
     "light": {
-      "ash": "He stares into the lamp. Both irises hold the same steady cyan ring. Neither one strobes.",
-      "bone": "The eye on your left strobes cyan-white in the lamp. The other stays dull, like a dead coin.",
-      "cinder": "He squints and waters. Both irises stay even. No strobe. The pink is spread across the whole eye."
+      "ash": "He looks into the lamp. The left iris flares once, then both settle to the same cyan ring.",
+      "bone": "The iris on your left keeps strobing cyan-white. The other stays dim.",
+      "cinder": "He squints, and both eyes water. The irises stay even. The pink covers the whole eye."
     },
     "lid": {
-      "ash": "You draw the lid down. The white is clean. The inner corner is the same color as the rest.",
-      "bone": "The inner corners are deep crimson, pooled, heavier on your left. It is pressure, not irritation.",
-      "cinder": "Pink, yes, but from edge to edge. The inner corner is no darker than the rest of the eye."
+      "ash": "You lower the lid. The white is clear, and the inner corner matches the rest of the eye.",
+      "bone": "The inner corners are deep crimson. The one on your left is darker.",
+      "cinder": "The eye is pink from edge to edge. The inner corner is no darker than the rest."
     },
     "count": {
       "ash": "He counts from thirty to one without a stumble. The jaw stays still the whole way down.",
-      "bone": "The numbers come out straight. The jaw on your left ticks on its own clock, three times before twenty.",
+      "bone": "The numbers come out straight. The jaw on your left ticks three times before twenty, not in time with the count.",
       "cinder": "He rushes and loses twenty-two. The jaw on your right clenches once, then nothing. No rhythm."
     },
     "pronoun": {
-      "ash": "\"I am the President of the Republic.\" Three times, smooth as a teleprompter. The pronoun never catches.",
+      "ash": "\"I am the President of the Republic.\" Three times, without a catch on the word I.",
       "bone": "\"I- I am the President.\" The word I catches on every pass. The rest of the sentence does not.",
-      "cinder": "He says it too loud and too fast. There is fear in it. The pronoun itself does not glitch."
+      "cinder": "He says it too loud and too fast. He is afraid. The word I itself does not catch."
     },
     "alibi": {
       "ash": "At 02:14 I was in stasis bay two. The night nurse has the log. I woke when the alarms did.",
@@ -194,14 +194,14 @@
     }
   },
   "OBSERVE": {
-    "ash": "You study him in the hard light. Both irises carry the same calm cyan ring, and neither strobes. The whites are clear. The inner corners are clean. His jaw does not move unless he is speaking. His upper lip is dry. He looks like a man giving a briefing.",
-    "bone": "You study him. The eye on your left strobes cyan-white when the light hits. The other stays dim. Both inner corners are a deep, pooled crimson, heavier on your left. The jaw on your left ticks, stops, and ticks again on a rhythm that is not speech. One bead of sweat sits on the upper lip. He is too still.",
-    "cinder": "You study him. He cannot hold your eye. Both whites are pink from edge to edge, washed, not a dark pool at the inner corner. The irises match. There is no strobe. He blinks in bursts. Once, the jaw on your right clenches and lets go. It does not repeat. He is sweating through the collar."
+    "ash": "He looks straight at you. There is sweat at the temple, the same as the others. From this chair you cannot see a sign that would match the file.",
+    "bone": "He sits very still. There is sweat on the upper lip. His eyes and jaw look ordinary until you test them.",
+    "cinder": "He will not hold your eye, and he is sweating at the collar. He looks frightened. Fear is not the pattern in the file."
   },
   "SHOCK_LINE": {
-    "ash": "RESTRAINT FIRED. Subdued is not the same as guilty, and it is not the same as innocent.\n\n\"That was unnecessary. Ask.\"",
-    "bone": "RESTRAINT FIRED. Subdued is not the same as guilty, and it is not the same as innocent.\n\n\"Ask. Get it over with.\"",
-    "cinder": "RESTRAINT FIRED. Subdued is not the same as guilty, and it is not the same as innocent.\n\n\"All right. I'm here. I'm here.\""
+    "ash": "RESTRAINT FIRED. This does not mean he is guilty, or innocent.\n\n\"That was unnecessary. Ask.\"",
+    "bone": "RESTRAINT FIRED. This does not mean he is guilty, or innocent.\n\n\"Ask. Get it over with.\"",
+    "cinder": "RESTRAINT FIRED. This does not mean he is guilty, or innocent.\n\n\"All right. I'm here. I'm here.\""
   },
   "FAILSAFE_FILE": [
     [
@@ -210,31 +210,31 @@
     ],
     [
       "sub",
-      "SECRETARY EYES ONLY  /  NOT IN THE MARCH CLONE IMPRINT"
+      "SECRETARY EYES ONLY  /  NOT IN THE MARCH COPY"
     ],
     [
       "body",
-      "The duplicates were printed from a March archive. Anything after that lives in two places only: in him, and in you."
+      "These copies were printed from a March archive. Anything after March is known only by him, and by you."
     ],
     [
       "mark",
-      "WEST STUDY. Last Tuesday, after the Geneva call, he broke the crystal ashtray himself and told you to blame the night staff. The stolen mind will remember doing it. A bare clone will invent another story."
+      "WEST STUDY. Last Tuesday, after the Geneva call, he broke the crystal ashtray and told you to blame the night staff. The stolen mind will remember doing it. A copy without those memories will invent a different story."
     ],
     [
       "mark",
-      "PRIVATE NAME. When they were alone, his wife called him Marrow. It is in no archive, no speech, and no imprint."
+      "PRIVATE NAME. When they were alone, his wife called him Marrow. It is not in any archive or speech."
     ],
     [
       "mark",
-      "COMPROMISE PHRASE. If he were not himself, the signal to the Chiefs would be: \"The third lamp on the east colonnade is always dark.\""
+      "COMPROMISE PHRASE. If he were not himself, the signal would be: \"The third lamp on the east colonnade is always dark.\""
     ],
     [
       "mark",
-      "CATEGORY. These clues are FAILSAFE MEMORY. Each question can be asked to only one unit. Spend them like ammunition."
+      "These are FAILSAFE MEMORY questions. You can ask each question of only one unit."
     ],
     [
       "dim",
-      "RESTRAINT LATCH, if a unit turns on you: CYAN shut (1), RED open (0), WHITE open (0). The terminal writes it as logic. The positions are the same."
+      "If a unit locks up, set the terminal to CYAN shut (1), RED open (0), WHITE open (0), then engage. The restraint does not tell you who the thief is."
     ]
   ],
   "CIA_FILE": [
@@ -244,35 +244,35 @@
     ],
     [
       "sub",
-      "NEURAL THEFT FIELD GUIDE  /  READ THE CLUSTER, NOT ONE SIGN"
+      "READ THE PATTERN  /  ONE SIGN IS NOT ENOUGH"
     ],
     [
       "body",
-      "Forcing a living consciousness into a host body leaves a pattern. One sign is nothing. Sweat is nothing. All three of them will sweat. Left means your left, as you face the unit."
+      "A stolen mind leaves a pattern. Sweat does not count, and all three of them will sweat. Left means your left as you face the unit. You will not see this by looking. You have to ask."
     ],
     [
       "mark",
-      "IRIS. The eye on YOUR LEFT strobes cyan-white under the hard light. The other stays dim. Matching rings in both eyes are ordinary clone hardware."
+      "IRIS. Under a direct light, the eye on your left strobes cyan-white. The other stays dim. A single flare, then a matched pair, is ordinary."
     ],
     [
       "mark",
-      "SCLERA. Deep crimson pools at the INNER corners, heavier on your left. Pink washed across the whole eye is vat-allergy, a known false positive."
+      "SCLERA. Deep crimson pools in the inner corners, darker on your left. Pink across the whole eye is a vat allergy, not theft."
     ],
     [
       "mark",
-      "JAW. A rhythmic twitch on YOUR LEFT side of the jaw. A single clench, on either side, is only fear."
+      "JAW. A repeated twitch on your left, out of time with his speech. One clench, on either side, is fear."
     ],
     [
       "mark",
-      "SPEECH. The thief catches on the words \"I\" and \"me\". Rambling is nerves. A glitch on the pronoun is theft."
+      "SPEECH. He catches on the words \"I\" and \"me\". Talking too fast is nerves. A catch on those words is not."
     ],
     [
       "mark",
-      "CATEGORIES. Use OCULAR SIGNS for the eyes. Use MOTOR TELLS for the jaw and the pronoun."
+      "Eye questions are OCULAR SIGNS. Jaw and speech questions are MOTOR TELLS. Use more than one."
     ],
     [
       "dim",
-      "Do not convict nervousness. Fear is dressed like guilt. The pattern is not."
+      "Being nervous is not the same as being guilty. Match the pattern, not a single line."
     ]
   ],
   "FILES": [

@@ -108,7 +108,7 @@ def draw_banner(game, screen):
     title = game.f_ui_b.render("SESSION OPEN", True, CYAN)
     sub_text = "Five minutes. Each question can be asked of only one unit."
     if not game.picked:
-        sub_text = "No categories locked. You can still observe, then accuse."
+        sub_text = "No categories chosen. A first look will not name anyone."
     sub = game.f_ui.render(sub_text, True, INK)
     title.set_alpha(alpha)
     sub.set_alpha(alpha)
@@ -171,7 +171,7 @@ def draw_dock(game, screen):
     screen.blit(game.f_tiny.render(rule, True, DIM), (250, DOCK + 12))
     y = DOCK + 36
     if not clone:
-        idle = wrap(game.f_dlg, "They are seated apart so they cannot compare stories. Left and right move between them. Enter opens the one in focus.", 980)
+        idle = wrap(game.f_dlg, "They sit too far apart to hear each other. Left and Right choose a unit. Enter selects the highlighted one.", 980)
         yy = y + 30
         for line in idle:
             screen.blit(game.f_dlg.render(line, True, INK), (250, yy))
@@ -180,16 +180,16 @@ def draw_dock(game, screen):
     status = "SAFETY LOCK" if clone.hostile else ("RESTRAINED" if clone.shocked else "LISTENING")
     status_color = CRIMSON if clone.hostile else DIM
     screen.blit(game.f_tiny.render(status, True, status_color), (980, DOCK + 12))
-    widgets.button(game, screen, (250, y, 1000, 30), "OBSERVE  /  read the body, spends no question", ("observe",), "ghost", zone="dock")
+    widgets.button(game, screen, (250, y, 1000, 30), "FIRST LOOK  /  how he sits, not the signs in the file", ("observe",), "ghost", zone="dock")
     y += 34
     if clone.hostile:
         widgets.button(game, screen, (250, y, 1000, 36), "OVERRIDE SAFETY LOCK", ("puzzle",), "danger", zone="dock")
         y += 44
-        screen.blit(game.f_ui.render("Questions are sealed until the restraint fires.", True, CRIMSON), (250, y))
+        screen.blit(game.f_ui.render("He will not answer until the restraint fires.", True, CRIMSON), (250, y))
         return
     active = logic.questions_for(QUESTIONS, game.picked)
     if not active:
-        screen.blit(game.f_ui.render("No question categories were locked. Observation is all you have.", True, AMBER), (250, y + 8))
+        screen.blit(game.f_ui.render("No categories were chosen. A first look will not name the thief.", True, AMBER), (250, y + 8))
         return
     for question in active:
         if question["id"] in game.used:
@@ -377,7 +377,7 @@ def draw_pause(game, screen):
         "UP DOWN       move the highlight",
         "ENTER         choose it",
         "ESC           close, then pause",
-        "O  F  N  A    observe, files, notes, accuse",
+        "O  F  N  A    first look, files, notes, accuse",
     )
     y = 280
     for line in help_lines:

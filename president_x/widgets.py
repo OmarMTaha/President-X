@@ -128,8 +128,8 @@ def corners(game, screen, rect, color):
 
 
 def crumb(game, screen, y):
-    steps = [("tutor", "HOW TO"), ("paper", "OPENING"), ("brief", "BRIEF"), ("drop", "FILES"), ("prep", "PREP"), ("room", "INTERVIEW")]
-    current = {"title": "tutor", "zoom": "paper", "end": "room"}.get(game.state, game.state)
+    steps = [("tutor", "HOW TO"), ("paper", "OPENING"), ("drop", "FILES"), ("prep", "PREP"), ("room", "INTERVIEW")]
+    current = {"title": "tutor", "zoom": "paper", "brief": "drop", "end": "room"}.get(game.state, game.state)
     if current not in {sid for sid, _label in steps}:
         current = "title"
     here = [sid for sid, _label in steps].index(current)

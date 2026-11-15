@@ -34,7 +34,7 @@ def draw_title(game, screen):
         y += 34
     widgets.crumb(game, screen, 28)
     widgets.button(game, screen, (490, 520, 300, 46), "HOW TO PLAY", ("goto", "tutor"), "solid")
-    widgets.center(game, screen, game.f_tiny, "The briefing comes first    flashing light", (90, 70, 70), W // 2, 660)
+    widgets.center(game, screen, game.f_tiny, "Instructions first    the lamp flickers", (90, 70, 70), W // 2, 660)
     widgets.hit(game, (0, 0, W, H), ("goto", "tutor"), nav=False)
 
 
@@ -146,7 +146,7 @@ def draw_prep(game, screen):
     screen.fill(BG)
     pygame.draw.rect(screen, (5, 6, 8), (0, 0, W, 72))
     screen.blit(game.f_ui_s.render("PREP WINDOW", True, CYAN), (24, 14))
-    screen.blit(game.f_tiny.render("LEFT RIGHT change file.   UP DOWN move.   ENTER toggles a category or begins.", True, DIM), (24, 40))
+    screen.blit(game.f_tiny.render("Left and Right switch files.   Up and Down move.   Enter picks a category, or starts.", True, DIM), (24, 40))
     left = clock_str(game.prep_left)
     total = int(math.ceil(max(0, game.prep_left) - 1e-6))
     color = CRIMSON if total <= 10 else AMBER
